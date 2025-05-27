@@ -1,0 +1,19 @@
+
+@media (max-width: 480px) {
+    .hero h1,
+    .cta-content h2 {
+      font-size: 1.75rem;
+    }
+  
+    .hero-subtitle,
+    .cta-content p,
+    .faq-question h3 {
+      font-size: 1rem;
+    }
+  
+    .login-form {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  

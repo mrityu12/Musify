@@ -1,0 +1,80 @@
+.create-page {
+    padding: 4rem 1rem;
+    background: #f9fafb;
+    min-height: 100vh;
+    transition: background-color 2s ease;
+  }
+  
+  .create-container {
+    max-width: 700px;
+    margin: auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .create-container h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .create-container p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+  }
+  
+  .create-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  textarea {
+    padding: 10px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  select,
+  input[type="file"],
+  button {
+    padding: 10px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+  }
+  
+  button {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.2);
+  }
+  
+  .generated-music {
+    margin-top: 2rem;
+    text-align: center;
+    font-style: italic;
+    color: var(--text-light);
+  }
+  
+
+  @media (max-width: 600px) {
+    .create-container {
+      padding: 1rem;
+    }
+  
+    .create-container h2 {
+      font-size: 1.5rem;
+    }
+  }
+  

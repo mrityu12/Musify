@@ -1,0 +1,17 @@
+
+.faq-item:hover,
+.pricing-plan:hover,
+.step:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+/* 🌈 Subtle Background Gradients */
+.hero {
+  background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+}
+
+.footer {
+  background: linear-gradient(to right, #f3f4f6, #e5e7eb);
+}

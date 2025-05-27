@@ -1,0 +1,129 @@
+.how-it-works {
+    padding: 100px 0;
+  }
+  
+  .steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-top: 60px;
+  }
+  
+  .step {
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+  }
+  
+  .step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 40px;
+    height: 80px;
+    width: 2px;
+    background-color: var(--primary-light);
+  }
+  
+  .step:nth-child(even) {
+    grid-template-columns: 80px 1fr 1fr;
+    direction: rtl;
+  }
+  
+  .step:nth-child(even) .step-number,
+  .step:nth-child(even) .step-content,
+  .step:nth-child(even) .step-image {
+    direction: ltr;
+  }
+  
+  .step-number {
+    width: 80px;
+    height: 80px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .step-content {
+    max-width: 400px;
+  }
+  
+  .step-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--text-color);
+  }
+  
+  .step-content p {
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .step-image {
+    max-width: 100%;
+  }
+  
+  .step-image img {
+    width: 20%;
+    /* border-radius:none; */
+    box-shadow:none;
+  }
+  
+  @media (max-width: 992px) {
+    .step {
+      grid-template-columns: 60px 1fr;
+    }
+    
+    .step:nth-child(even) {
+      grid-template-columns: 60px 1fr;
+    }
+    
+    .step-image {
+      grid-column: 2;
+      grid-row: 2;
+      margin-top: 20px;
+    }
+    
+    .step:not(:last-child)::after {
+      left: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .how-it-works {
+      padding: 80px 0;
+    }
+    
+    .steps-container {
+      gap: 60px;
+    }
+    
+    .step {
+      grid-template-columns: 50px 1fr;
+      gap: 20px;
+    }
+    
+    .step:nth-child(even) {
+      grid-template-columns: 50px 1fr;
+    }
+    
+    .step-number {
+      width: 50px;
+      height: 50px;
+      font-size: 1.25rem;
+    }
+    
+    .step:not(:last-child)::after {
+      left: 25px;
+      height: 60px;
+    }
+  }

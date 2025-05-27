@@ -1,0 +1,41 @@
+
+:root {
+    --primary-color: #6366f1;
+    --secondary-color: #10b981;
+    --text-color: #111827;
+    --text-light: #6b7280;
+    --background-light: #f9fafb;
+    --border-radius: 12px;
+    --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --border-color: #e5e7eb;
+  }
+  
+ 
+  html {
+    scroll-behavior: smooth;
+  }
+ 
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+
+  button,
+  .cta-buttons a,
+  .hero-buttons a {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button:hover,
+  .cta-buttons a:hover,
+  .hero-buttons a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.2);
+  }
+  
